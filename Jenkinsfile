@@ -30,7 +30,6 @@ pipeline {
                                         removePrefix: 'dist/',
                                         remoteDirectory: '/tmp',
                                         execCommand: 'sudo /usr/bin/systemctl stop train-schedule',
-                                        echo '$?'
                                         execCommand: 'rm -rf /opt/train-schedule/*',
                                         echo '$?'
                                         execCommand: 'unzip /tmp/trainSchedule.zip -d /opt/train-schedule',
