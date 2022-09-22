@@ -31,11 +31,8 @@ pipeline {
                                         remoteDirectory: '/tmp',
                                         execCommand: 'sudo /usr/bin/systemctl stop train-schedule',
                                         execCommand: 'rm -rf /opt/train-schedule/*',
-                                        echo '$?'
                                         execCommand: 'unzip /tmp/trainSchedule.zip -d /opt/train-schedule',
-                                        echo '$?'
                                         execCommand: 'sudo /usr/bin/systemctl start train-schedule'
-                                        echo '$?'
                                         )
                                     ]
                                 )
